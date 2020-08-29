@@ -157,29 +157,43 @@
   <div class="col-sm-4"></div> 
   <div class="col-sm-4"></div>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <h3><a href="https://matlhane.github.io/AMAwebsite/KCAAAs.html" target="_blank">Karoo Central Astronomy Advantage Areas</a></h3>
 	  <img src="https://matlhane.github.io/AMAwebsite/Declared%20areas.jpeg" alt="SKA" style="width:60%">
-	  <p id="KCAAAs_E">Click the button to change the layout of this paragraph</p>
-	  <button onclick="KCAAAFunctionE()">Select english description</button>
-	  <script>
-	  function KCAAAFunctionE() {
-		var x = document.getElementById("KCAAAs_E");
-		x.style.fontSize = "25px"; 
-		x.style.color = "red"; 
-		}
-		</script>
-	  <p id="KCAAAs_A">Klik op die knoppie om die uitleg van hierdie paragraaf te verander</p>
-	  <button onclick="KCAAAFunctionA()">Kies Afrikaanse beskrywing</button>
-	  <script>
-	  function KCAAAFunctionA() {
-		var x = document.getElementById("KCAAAs_A");
-		x.style.fontSize = "25px"; 
-		x.style.color = "red"; 
-		}
-		</script>		
+	  <h2>Accordion Example</h2>
+	  <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+	  <div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse in">
+				<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			</div>
+		</div>
+	  </div>
+
+	  <div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+				</h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse in">
+				<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			</div>
+		</div>
+	  </div>
     </div>
     <div class="col-sm-4">
       <h3><a href="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html" target="_blank">Risk Classification of farms in 50 KM radius</a></h3>
