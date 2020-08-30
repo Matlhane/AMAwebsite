@@ -233,48 +233,14 @@
   <div class="col-sm-4"></div>
 </div>
 
+
+
 <div class="container">
   <div id="content" class="row">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="col-sm-4">
       <h3><a href="https://matlhane.github.io/AMAwebsite/KCAAAs.html" target="_blank">Click the link for the Karoo Central Astronomy Advantage Areas</a></h3>
 	  <img src="https://matlhane.github.io/AMAwebsite/Declared%20areas.jpeg" alt="SKA" style="width:100%">
-
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading-1">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="https://matlhane.github.io/AMAwebsite/KCAAAs.html" aria-expanded="false" aria-controls="collapse-1" class="collapsed">
-                            Open English description of Karoo Central Astronomy Advantage Areas
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-1" aria-expanded="false" style="height: 0px;">
-                    <div class="panel-body">
-                        
-                            This is KCAAAs description
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading-2">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="https://matlhane.github.io/AMAwebsite/KCAAAs.html" aria-expanded="false" aria-controls="collapse-2" class="collapsed">
-                            Gedetailleerde Afrikaanse beskrywing van Karoo Central Astronomy Advantage Areas
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2" aria-expanded="false" style="height: 0px;">
-                    <div class="panel-body">
-                        
-                            This is KCAAAs description
-                        
-                    </div>
-                </div>
-            </div>
-        
-        
             
 	</div> 
 
@@ -282,40 +248,6 @@
       <h3><a href="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html" target="_blank">Click the link for the Risk Classification of Farmhouses</a></h3>
 	  <img src="https://matlhane.github.io/AMAwebsite/Farms50KM.jpeg"  alt="SKA" style="width:100%">
 	  
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading-3">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html" aria-expanded="false" aria-controls="collapse-3" class="collapsed">
-                            Detailed English description of Farmhouses risk classification
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3" aria-expanded="false" style="height: 0px;">
-                    <div class="panel-body">
-                        
-                            This is  description of Farmhouses risk classification
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading-4">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="https://matlhane.github.io/AMAwebsite/KCAAAs.html" aria-expanded="false" aria-controls="collapse-4" class="collapsed">
-                            Gedetailleerde Afrikaanse beskrywing van Karoo Central Astronomy Advantage Areas
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4" aria-expanded="false" style="height: 0px;">
-                    <div class="panel-body">
-                        
-                            Gedetailleerde Afrikaanse beskrywing van Karoo Central Astronomy Advantage Areas
-                        
-                    </div>
-                </div>
-            </div>
-        
 	  
 	  
 	</div> 
@@ -367,6 +299,40 @@
 		</video>
 		<p><b>Note:</b>Click the video of FORM 5:  Permit application in connection with electrical activities </p>
     </div>	
-  </div>	
+	
+
+<div class="w3-container">
+
+<h2>Active Accordions</h2>
+<p>In this example we add the w3-red class to an active accordion (when the button is clicked on and the content is opened).</p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Some text..</p>
+</div>
+
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">Open Section 2</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Some other text..</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+  }
+}
+</script>
+	
+	
+	
   </div>
 </div>
