@@ -590,68 +590,6 @@ table {
 }
 </style>
 </head>
-<body>
-
-<h2>Single Border Around The Table:</h2>
-
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-<tr>
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  </div>
-</div>
-</tr>
-
-<tr>
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  </div>
-</div>
-</tr>
-  
-
-  </tr>
-
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
-</head>
-<body>
-  <select href="#" id="select-state" placeholder="Pick a state...">
-    <option value="">Select a state...</option>
-    <option href="https://matlhane.github.io/AMAwebsite/Forms1.jpg" value="AL">Alabama</option>
-    <option href="https://matlhane.github.io/AMAwebsite/Forms2.jpg" value="AK">Alaska</option>
-    <option href="https://matlhane.github.io/AMAwebsite/Forms3.jpg" value="AZ">Arizona</option>
-    <option href="https://matlhane.github.io/AMAwebsite/Forms4.jpg" value="AR">Arkansas</option>
-    <option href="#" value="CA">California</option>
-    <option href="#" value="CO">Colorado</option>
-    <option href="#" value="CT">Connecticut</option>
-    <option href="#" value="DE">Delaware</option>
-    <option href="#" value="DC">District of Columbia</option>
-    <option href="#" value="FL">Florida</option>
-    <option href="#" value="GA">Georgia</option>
-    <option href="#" value="HI">Hawaii</option>
-    <option href="#" value="ID">Idaho</option>
-    <option href="#" value="IL">Illinois</option>
-    <option href="#" value="IN">Indiana</option>
-  </select>
-</body>
-</html>
 
 <html>
 <style>
@@ -765,6 +703,63 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
+</body>
+</html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 
 </body>
 </html>
