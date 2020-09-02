@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" type="image/jpg" href="https://matlhane.github.io/AMAwebsite/logo-6602dd55aa1c7406e4f8a817cc1271d3.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="SENCOR_Logo.ico">	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -80,16 +83,13 @@ div.b {
 
   <div class="item1">
 
-  <div class="b">
-    <a href="https://www.dst.gov.za/ama/">
-        <img src="https://matlhane.github.io/AMAwebsite/logo-6602dd55aa1c7406e4f8a817cc1271d3.jpg" alt="DST AMA"  style="width:30%" >
-    </a>
-  </div>
-
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
+<body>
+<div class="bg-div">
+  <a href="https://www.dst.gov.za/ama/">
+    <img class="logo-img" src="https://matlhane.github.io/AMAwebsite/logo-6602dd55aa1c7406e4f8a817cc1271d3.jpg" ALIGN=CENTER alt="DST AMA"  style="width:30%">
+  </a>
+    <nav>
+    <ul>
     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Declaration<span class="caret"></span></a>
       <ul class="dropdown-menu">
@@ -164,9 +164,50 @@ div.b {
         <li><a href="#">Saturation threshold</a></li>
       </ul>
     </li>		
-  </ul>
-  </div>
-</nav>
+  </ul>		
+    </nav>
+</div>
+</body>
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+/* Navigation */
+nav{
+    margin: 0;
+    overflow:hidden;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+-----------
+.logo-img{
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+.bg-div{
+    background:#333;
+}
+
 
 
 
