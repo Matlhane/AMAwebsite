@@ -18,24 +18,153 @@
 	color:blue;
   }
   </style>
-
+.menu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+}
+.menu ul{
+    background:#006633;
+    height:35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.menu li{
+    float:left;
+    padding:0px;
+}
+.menu li a{
+    background:#006633;
+    color:#ffffff;
+    display:block;
+    font-weight:normal;
+    line-height:35px;
+    margin:0px;
+    padding:0px 25px;
+    text-align:center;
+    text-decoration:none;
+}
+.menu li a:hover, .menu ul li:hover a{
+    background: #003f20;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.menu li ul{
+    background:#006633;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:225px;
+    z-index:200;
+    /*top:1em;
+    /*left:0;*/
+}
+.menu li:hover ul{
+    display:block;
+}
+.menu li li {
+    background:;
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:225px;
+}
+.menu li:hover li a{
+    background:none;
+}
+.menu li ul a{
+    display:block;
+    height:30px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+}
+.menu li ul a:hover, .menu li ul li:hover a{
+    background:#003f20;
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+}
+.menu p{
+    clear:left;
+}  
   
-    <style>
-      .button {
-        background-color: #89859c;
-        border: #7c7286;
-        color: white;
-        padding: 20px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 1px 1px;
-        cursor: pointer;
-      }
-    </style>
-   
+  
+<style>
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red;
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+</style>
 
 <style>
 .item1 { grid-area: header; }
@@ -85,6 +214,8 @@
     <img class="logo-img" src="https://matlhane.github.io/AMAwebsite/logo-6602dd55aa1c7406e4f8a817cc1271d3.jpg" style="width:20%"  ALT="align box" ALIGN=LEFT>
 	</a>
 <div class="bg-div">
+
+
 
     <nav>
     <ul>
@@ -148,23 +279,36 @@
         <li><a href="#">SARAS levels</a></li>	
         <li><a href="#">Saturation threshold</a></li>
       </ul>
-    </li>
-    <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Spectrum Management<span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="https://matlhane.github.io/AMAwebsite/REEA_Pathloss.html">Risk classification of REEA</a></li>
-        <li><a href="http://bigrat.jb.man.ac.uk/~sjm/Spectrum/Karoo-WebExport/qgis2web_2020_08_03-11_25_02_774525/">Renewable Energy Development Zone - Compatibility Study</a></li>
-        <li><a href="http://bigrat.jb.man.ac.uk/~sjm/Spectrum/Karoo-RFI-Studies/REDZ/Losses.html">Renewable Energy Development Zone - Compatibility Study</a></li>
-        <li><a href="http://bigrat.jb.man.ac.uk/~sjm/Spectrum/Karoo-RFI-Studies/REEA/Losses.html">Renewable Energy Facilities - Compatibility Study</a></li>
-        <li><a href="#">Spiral Arm Corridor compatibility Study</a></li>
-		<li><a href="#">SKA telescope station compatibility Study</a></li>
-        <li><a href="#">SARAS levels</a></li>	
-        <li><a href="#">Saturation threshold</a></li>
-      </ul>
-    </li>		
+    </li>	
   </ul>		
     </nav>
 </div>
+
+
+<div class="menu">
+    <ul>
+        <li><a href="#" target="_self" >Main Item 1</a></li>
+        <li><a href="#" target="_self" >Main Item 2</a>
+            <ul>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+            </ul>
+        </li>
+        <li><a href="#" target="_self" >Main Item 3</a></li>
+        <li><a href="#" target="_self" >Main Item 6</a>
+            <ul>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+                <li><a href="#" target="_self" >Test Sub Item</a></li>
+            </ul>                
+        </li>
+    </ul>
+</div>
+
+
+
 </body>
 
 
@@ -943,5 +1087,13 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
+
+<button class="btn success">Success</button>
+<button class="btn info">Info</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+<button class="btn default">Default</button>
+
 
 </body></html>
