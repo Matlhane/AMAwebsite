@@ -178,17 +178,15 @@
 
 <style>
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'main main main right right right'
-    'menu menu menu footer footer footer';
+    'main main main main main main'
+    'footer footer footer footer footer footer';
   grid-gap: 20px;
   background-color: #ffffff;
   padding: 12px;
@@ -484,7 +482,8 @@
     <div class="clearfix"></div>
     <br>
 </div>
-  
+</div>
+ 
   <div class="item2">
 
   <div class="w3-container">
@@ -503,14 +502,6 @@
 		<iframe src="https://matlhane.github.io/AMAwebsite/Booklet%20of%20KCAAA%20Regulations.pdf" width="100%"  height="300" >		
 	</div>   	
 
-	</div> 
-</div>
-
-
-  
-  <div class="item3">
-  
-  <div class="w3-container">
 	
     <div class="col-sm-4">
 		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAAs.html">Astronomy Advantage Areas</a></button>
@@ -574,7 +565,7 @@
   
   </div>  
   
-  <div class="item4">
+  <div class="item3">
   
   
   <div class="w3-container">
@@ -634,15 +625,6 @@
 			<p>Radio transmission and electrical emission within in the KCAAA1 pose a low risk of interreference.</p>		
 		</div>
 
-	</div> 
-</div>
-  
-    
-  
-  </div>
-  
-  <div class="item5">
-  
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -772,7 +754,10 @@ for (var i = 0; i < btns.length; i++) {
 
   
   
+</div>
+</div>
   
+</div>
 </div>
 
 </body>
