@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<head>
 	<title>REGULATIONS FOR THE PROTECTION OF THE KAROO CENTRAL ASTRONOMY ADVANTAGE AREAS IMPLEMENTATION </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -178,9 +177,18 @@
 
 
 <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -192,15 +200,11 @@
   padding: 20px 0;
   font-size: 30px;
 }
-
-.item1 {
-  grid-column: 1 / 5;
-}
 </style>
+
 </head>
-
-
 <body>
+
 
 <div class="grid-container">
   <div class="item1">
@@ -481,6 +485,10 @@
     
   </div>
   <div class="item2">
+  
+  
+  </div>
+  <div class="item3">
 
   <div class="w3-container">
   
@@ -499,158 +507,10 @@
 	</div>   	
 
 	</div>   
-  
-  </div>
-  <div class="item3">
-  
-  
-  </div>  
-  <div class="item4">
-  
-  
-  </div>
-  <div class="item5">
-  
-  </div>
-  <div class="item6">
-  
-  
-  </div>
-  <div class="item7">
-  
-  
-  </div>
-  <div class="item8">
-  
-  
-  </div>  
-  <div class="item9">
-  
-  
-  
-  </div>
-  <div class="item10">
-  
-  
-  
-  </div>
-  <div class="item11">
-  
-  
-  
-  </div>
-  <div class="item12">
-  
-  
-  
-  </div>
-  <div class="item13">
-  
-  
-  
-  </div>
-  <div class="item14">
-  
-  
-  </div>
-  <div class="item15">
-  
-  
-  </div>
-</div>
-
-</body>
-</html>
-
-
-
-
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-<body>
-
-
-
-<div class="grid-container">
-
-  <div class="item1">
-
-
-  <div class="item2">
-
-</div>
-
-
-  
-  <div class="item3">
-  
-  <div class="w3-container">
 	
-    <div class="col-sm-4">
-		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAAs.html">Astronomy Advantage Areas</a></button>
-		<iframe width="100%" height="300"  src="https://matlhane.github.io/AMAwebsite/KCAAAs.html"></iframe>
-
-		<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-lime w3-left-align">Detailed description of KCAAAs</button>
-		<div id="Demo1" class="w3-hide w3-container">
-			<p>Core AAA is a physical area in which most of the telescope stations are located.</p>
-			<p>Central AAAs is where the Minister restrict the use of radio frequency spectrum that has detrimental impact on astronomy.</p>
-			<p>Coordinated AAA is where the Minister sets standards and conditions to prevent detrimental impact on astronomy.</p>
-			<p>20 KM buffer is the circle with a 20 KM radius to determine the saturation level.</p>
-			<p>10 KM protection corridor is the spiral arms area to determine the saturation level for radio transmitters and SARAS level for electrical equipment.</p>
-			<p>Permit is required for radio equipment using ICASA exempted spectrum within a 50 KM radius.</p>
-			<p>Permit is required for electrical equipment above 100 kVA within a distance of 30 km from the nearest SKA Infrastructure Territory corridor.</p>
-			<p>Permit is required for wind turbine electricity generation facility within a distance of 50 km from the nearest SKA Infrastructure Territory corridor.</p>
-		</div>
-
-	</div> 
-
-    <div class="col-sm-4">
-		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html">RFI & EMI permit application</a></button>
-		<iframe width="100%" height="300"  src="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html"></iframe>
-
-		<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-lime w3-left-align">Risk Classification of Farmhouses</button>
-		<div id="Demo3" class="w3-hide w3-container">
-			<p>The radio telescope should be located in the area that has little or no interference.</p>
-			<p>Cosmic radio signal detected and measured by radio telescopes are weaker than manmade radio transmission or electrical emission.</p>
-			<p>A cellular telephone located on the Moon would produce a signal on Earth that radio astronomers consider quite strong.</p>
-			<p>The radio telescope interference can be caused by terrestrial transmissions reflected by the Moon.</p>
-			<p>Radio astronomy interference leads to both data loss and loss of data quality.</p>				
-			<p>The risk classification of radio transmission and electrical emission varies between extreme risk, high risk, medium risk and low risk.</p>
-			<p>Radio transmission and electrical emission in the core area and some of the servitude farms poses an extreme risk of interference.</p>
-			<p>Radio transmission and electrical emission within the 20 KM radius and some of servitude farms poses high risk of interference.</p>
-			<p>Radio transmission and electrical emission within the 50 KM radius, KCAAA3 and KCAAA2 poses medium risk of interference.</p>
-			<p>Radio transmission and electrical emission within in the KCAAA1 pose a low risk of interreference.</p>		
-		</div>
-
-	</div> 
-    <div class="col-sm-4">
-		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html">RFI & EMI permit application</a></button>
-		<iframe width="100%" height="300"  src="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html"></iframe>
-
-		<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-lime w3-left-align">Risk Classification of Farmhouses</button>
-		<div id="Demo3" class="w3-hide w3-container">
-			<p>The radio telescope should be located in the area that has little or no interference.</p>
-			<p>Cosmic radio signal detected and measured by radio telescopes are weaker than manmade radio transmission or electrical emission.</p>
-			<p>A cellular telephone located on the Moon would produce a signal on Earth that radio astronomers consider quite strong.</p>
-			<p>The radio telescope interference can be caused by terrestrial transmissions reflected by the Moon.</p>
-			<p>Radio astronomy interference leads to both data loss and loss of data quality.</p>				
-			<p>The risk classification of radio transmission and electrical emission varies between extreme risk, high risk, medium risk and low risk.</p>
-			<p>Radio transmission and electrical emission in the core area and some of the servitude farms poses an extreme risk of interference.</p>
-			<p>Radio transmission and electrical emission within the 20 KM radius and some of servitude farms poses high risk of interference.</p>
-			<p>Radio transmission and electrical emission within the 50 KM radius, KCAAA3 and KCAAA2 poses medium risk of interference.</p>
-			<p>Radio transmission and electrical emission within in the KCAAA1 pose a low risk of interreference.</p>		
-		</div>
-
-	</div> 
-</div>
   
-    
   
   </div>  
-  
   <div class="item4">
   
   
@@ -714,12 +574,11 @@
 	</div> 
 </div>
   
-    
-  
+     
   </div>
-  
   <div class="item5">
   
+
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -847,7 +706,109 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 
 
+   
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<body>
+
+
+
+<div class="grid-container">
+
+  <div class="item1">
+
+
+  <div class="item2">
+
+</div>
+
+
   
+  <div class="item3">
+ 
+  
+  </div>  
+  
+  <div class="item4">
+  
+  
+  <div class="w3-container">
+	
+    <div class="col-sm-4">
+		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAAs.html">Astronomy Advantage Areas</a></button>
+		<iframe width="100%" height="300"  src="https://matlhane.github.io/AMAwebsite/KCAAAs.html"></iframe>
+
+		<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-lime w3-left-align">Detailed description of KCAAAs</button>
+		<div id="Demo1" class="w3-hide w3-container">
+			<p>Core AAA is a physical area in which most of the telescope stations are located.</p>
+			<p>Central AAAs is where the Minister restrict the use of radio frequency spectrum that has detrimental impact on astronomy.</p>
+			<p>Coordinated AAA is where the Minister sets standards and conditions to prevent detrimental impact on astronomy.</p>
+			<p>20 KM buffer is the circle with a 20 KM radius to determine the saturation level.</p>
+			<p>10 KM protection corridor is the spiral arms area to determine the saturation level for radio transmitters and SARAS level for electrical equipment.</p>
+			<p>Permit is required for radio equipment using ICASA exempted spectrum within a 50 KM radius.</p>
+			<p>Permit is required for electrical equipment above 100 kVA within a distance of 30 km from the nearest SKA Infrastructure Territory corridor.</p>
+			<p>Permit is required for wind turbine electricity generation facility within a distance of 50 km from the nearest SKA Infrastructure Territory corridor.</p>
+		</div>
+
+	</div> 
+
+    <div class="col-sm-4">
+		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html">RFI & EMI permit application</a></button>
+		<iframe width="100%" height="300"  src="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html"></iframe>
+
+		<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-lime w3-left-align">Risk Classification of Farmhouses</button>
+		<div id="Demo3" class="w3-hide w3-container">
+			<p>The radio telescope should be located in the area that has little or no interference.</p>
+			<p>Cosmic radio signal detected and measured by radio telescopes are weaker than manmade radio transmission or electrical emission.</p>
+			<p>A cellular telephone located on the Moon would produce a signal on Earth that radio astronomers consider quite strong.</p>
+			<p>The radio telescope interference can be caused by terrestrial transmissions reflected by the Moon.</p>
+			<p>Radio astronomy interference leads to both data loss and loss of data quality.</p>				
+			<p>The risk classification of radio transmission and electrical emission varies between extreme risk, high risk, medium risk and low risk.</p>
+			<p>Radio transmission and electrical emission in the core area and some of the servitude farms poses an extreme risk of interference.</p>
+			<p>Radio transmission and electrical emission within the 20 KM radius and some of servitude farms poses high risk of interference.</p>
+			<p>Radio transmission and electrical emission within the 50 KM radius, KCAAA3 and KCAAA2 poses medium risk of interference.</p>
+			<p>Radio transmission and electrical emission within in the KCAAA1 pose a low risk of interreference.</p>		
+		</div>
+
+	</div> 
+    <div class="col-sm-4">
+		<button style="text-align:center; font-size: 20px;" class="btn success"><a href= "https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html">RFI & EMI permit application</a></button>
+		<iframe width="100%" height="300"  src="https://matlhane.github.io/AMAwebsite/KCAAA_farm_attenuation.html"></iframe>
+
+		<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-lime w3-left-align">Risk Classification of Farmhouses</button>
+		<div id="Demo3" class="w3-hide w3-container">
+			<p>The radio telescope should be located in the area that has little or no interference.</p>
+			<p>Cosmic radio signal detected and measured by radio telescopes are weaker than manmade radio transmission or electrical emission.</p>
+			<p>A cellular telephone located on the Moon would produce a signal on Earth that radio astronomers consider quite strong.</p>
+			<p>The radio telescope interference can be caused by terrestrial transmissions reflected by the Moon.</p>
+			<p>Radio astronomy interference leads to both data loss and loss of data quality.</p>				
+			<p>The risk classification of radio transmission and electrical emission varies between extreme risk, high risk, medium risk and low risk.</p>
+			<p>Radio transmission and electrical emission in the core area and some of the servitude farms poses an extreme risk of interference.</p>
+			<p>Radio transmission and electrical emission within the 20 KM radius and some of servitude farms poses high risk of interference.</p>
+			<p>Radio transmission and electrical emission within the 50 KM radius, KCAAA3 and KCAAA2 poses medium risk of interference.</p>
+			<p>Radio transmission and electrical emission within in the KCAAA1 pose a low risk of interreference.</p>		
+		</div>
+
+	</div> 
+</div>
+  
+    
+  
+  </div>
+  
+  <div class="item5">
+   
   
   
 </div>
